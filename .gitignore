@@ -1,0 +1,28 @@
+# Keil uVision - Fișiere temporare și de output
+*.obj
+*.lst
+*.lnp
+*.m51
+*.__i
+*.build_log.htm
+*.dep
+*.htm
+*.map
+*.txt
+*.iex
+*.i
+*.crf
+*.d
+*.axf
+*.tra
+*.pjt
+
+# Fișiere de setări utilizator (opțional, dar recomandat să nu fie urcate)
+*.uvgui.*
+*.uvopt
+*.uvoptx
+*.uvguix.*
+
+# Fișiere executabile (HEX-ul se urcă doar dacă vrei să poată fi descărcat direct)
+# Dacă vrei să urci și HEX-ul, șterge linia de mai jos:
+*.hex
