@@ -18,13 +18,13 @@ Sistemul respectă constrângerile de temporizare impuse de un cristal de cuarț
     * **Intel 8253 (PIT):** Configurat pentru generare de semnal (simulare hardware).
 * **Afișaj:** 6 unități 7-segmente (Anod Comun) organizate în format `HH:MM:SS`.
 
+
 ### 🧮 Calcul Temporizare (Timer 0)
 Pentru a obține un interval de exact **20ms** (50 Hz) necesar bazei de timp:
 * **Frecvență tact:** $11.0592 \text{ MHz} / 12 = 921.6 \text{ kHz}$
-* **Perioadă instrucțiune:** $\approx 1.085 \text{ \mu s}$
+* **Perioadă instrucțiune:** $1 / 921.6 \text{ kHz} \approx 1.085 \mu s$
 * **Valoare încărcare (Decimal):** $65536 - (0.02 / 1.085 \times 10^{-6}) = 47104$
 * **Valoare Hexazecimală:** `B800H` (încărcată în `TH0` și `TL0`)
-
 
 
 ## 📂 Structura Registrelor și Adresare
